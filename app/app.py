@@ -21,4 +21,4 @@ def index(hexcode):
     return send_file("colors/" + hex + ".jpg", mimetype='image/gif') # return image
     
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(threaded=True, port=5000)
